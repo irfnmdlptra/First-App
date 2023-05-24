@@ -7,7 +7,10 @@ class App extends React.Component{
     super(props);
 
 
-    const fruit1
+    const fruit1 = 'mangga';
+    const fruit2 = 'apple';
+    const fruit3 = 'delima';
+    const fruits 
   }
 
   render() {
