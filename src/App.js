@@ -10,7 +10,7 @@ class App extends React.Component{
     const fruit1 = 'mangga';
     const fruit2 = 'apple';
     const fruit3 = 'delima';
-    const fruits 
+    const fruits = ['mangga', 'apple', 'delima', 'nanas']
   }
 
   render() {
