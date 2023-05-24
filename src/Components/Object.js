@@ -1,4 +1,6 @@
 
 
 
-const Motor = {}
+const Motor = {
+    merek : 'Honda '
+}
