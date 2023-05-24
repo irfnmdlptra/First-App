@@ -12,6 +12,7 @@ class App extends React.Component{
     const fruits = ['mangga', 'apple', 'delima', 'nanas']
 
     alert(fruit1);
+    console.log(fruits)
   }
 
   render() {
