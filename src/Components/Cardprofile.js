@@ -1,17 +1,21 @@
 import React from "react";
-import "../css/Style.css";
+import  '../css/Style.css';
 
 const Cardprofile = () => {
   return (
     // 1 inline css
     <div
       style={{
-        background: "aqua",
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor : "black",
+        backgroundImage : "url(https://source.unsplash.com/1226x655?dark)",
+        backgroundRepeat : "no-repeat",
+        backgroundSize : "cover",
+        backgroundPosition : "center",
+        width : "100%",
+        height : "100vh",
+        display : "flex",
+        justifyContent : "center",
+        alignItems : "center",
       }}
     >
       <div className="card">
