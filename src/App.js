@@ -20,6 +20,7 @@ class App extends React.Component{
     fruits.push('anggur','salak') //untuk menambahkan aray baru 
     fruits.pop() //untuk menghapus array terakhir
     fruits.shift() //untuk menghapus array bagian depan
+    fruits.splice() //untuk menghapus array bagian tertentu
     const fruit = fruits.map( (f, index)=> <li key={index} >{f}</li>)
 
     // 2. Array.filter yaitu menghasilakn array baru tapi item yang didapat sesuai dengan kondisi tertentu sdesuai namanya filter
