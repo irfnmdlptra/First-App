@@ -14,8 +14,13 @@ class App extends React.Component{
   }
   
   render() {
-    const fruits = ['mangga', 'apple', 'delima', 'nanas'];
-    const fruit = fruits.map( (f, index)=> <li key={index}>{f}</li>)
+    // 1. array.map adalah variable untuk menghasilkan variable baru atau copian nya dan harus menggunakan id atau index
+    const fruits = ['mangga', 'apple', 'delima', 'nanas', 'durian', 'jambu', 'manggis', 'rambutan','mengkudu', 'naga'];
+    const fruit = fruits.map( (f, index)=> <li key={index} >{f}</li>)
+
+    // 2. Array.filter yaitu menghasilakn array baru tapi item yang didapat sesuai dengan kondisi tertentu sdesuai namanya filter
+
+
     return (<>
       <div>
         <h1>hello world</h1>
