@@ -19,9 +19,13 @@ class App extends React.Component{
     const fruit = fruits.map( (f, index)=> <li key={index} >{f}</li>)
 
     // 2. Array.filter yaitu menghasilakn array baru tapi item yang didapat sesuai dengan kondisi tertentu sdesuai namanya filter
-    const numbers = [0, ,-10, 2, 4, 1, 6, 8, 10, 7, 9, 5];
+    const numbers = [1, 2, 4, 1, 6, 8, 10, 7, 9, 5];
     const number = numbers.filter( (n)=> n <= 6);
     const num = number.map( (n)=> <li key={n.toString()}>{n}</li>)
+
+    // 3. Array.reduce dia akan menggabungkan semua nilai menjadi satu atau istilahnya menghitung semua total nya lah sebagai contoh sederhana nya 
+    const total = numbers.reduce( (value, acc) => value + acc);
+    console.log(total);
     return (<>
       <div>
         <h1>hello world</h1>
