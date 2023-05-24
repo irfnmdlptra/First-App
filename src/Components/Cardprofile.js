@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Style.css";
+import Profile from '../assets/profil.png'
 
 const Cardprofile = () => {
   return (
@@ -20,7 +21,7 @@ const Cardprofile = () => {
     >
       {/* 2 Css File  */}
       <div className="card">
-        <img />
+        <img src={Profile} />
         <div>Frontend Developer</div>
         <h2>Irfan Syahputra</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae minima veniam libero at! Fugit ipsum quos inventore excepturi aspernatur.</p>
