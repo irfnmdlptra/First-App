@@ -9,17 +9,21 @@ class App extends React.Component{
     const fruit1 = 'mangga';
     const fruit2 = 'apple';
     const fruit3 = 'delima';
-    const fruits = ['mangga', 'apple', 'delima', 'nanas']
-
+    
     // alert(fruit1);
-    console.log(fruits[0,3]);
   }
-
+  
   render() {
-    return (
+    const fruits = ['mangga', 'apple', 'delima', 'nanas'];
+    const fruit = fruits.map( (f, index)=> <li key={index}>{f}</li>)
+    return (<>
       <div>
         <h1>hello world</h1>
+        <ul>
+         { fruit }
+        </ul>
       </div>
+    </>
     )
   }
 }
