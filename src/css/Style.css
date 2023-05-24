@@ -5,6 +5,7 @@
     border-radius: 20px;
 }
 .card img {
-    width: 150px;
-    bor
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid aquamarine; 
 }
