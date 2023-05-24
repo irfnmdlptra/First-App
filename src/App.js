@@ -17,10 +17,13 @@ class App extends React.Component{
     // 1. array.map adalah variable untuk menghasilkan variable baru atau copian nya dan harus menggunakan id atau index
     const fruits = ['mangga', 'apple', 'delima', 'nanas', 'durian', 'jambu', 'manggis', 'rambutan','mengkudu', 'naga'];
     fruits[10] = 'pisang';
-    fruits.push('anggur','salak') //untuk menambahkan aray baru 
-    fruits.pop() //untuk menghapus array terakhir
-    fruits.shift() //untuk menghapus array bagian depan
-    fruits.splice() //untuk menghapus array bagian tertentu
+    // fruits.push('anggur','salak') //untuk menambahkan aray baru 
+    // fruits.pop() //untuk menghapus array terakhir
+    // fruits.shift() //untuk menghapus array bagian depan
+    fruits.splice(0, 5) //untuk menghapus array bagian tertentu
+    fruits.includes('naga') //untuk mengecek apakah suatu data itu ada didalam array atau angga
+    alert( fruits.includes('naga'))
+    alert( fruits.includes('manggu'))
     const fruit = fruits.map( (f, index)=> <li key={index} >{f}</li>)
 
     // 2. Array.filter yaitu menghasilakn array baru tapi item yang didapat sesuai dengan kondisi tertentu sdesuai namanya filter
