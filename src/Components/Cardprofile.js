@@ -22,10 +22,10 @@ const Cardprofile = () => {
       {/* 2 Css File  */}
       <div className="card">
         <img src={Profile} />
-        <div>Frontend Developer</div>
-        <h2>Irfan Syahputra</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae minima veniam libero at! Fugit ipsum quos inventore excepturi aspernatur.</p>
-        <button>Contact Me</button>
+        <div className="title">Frontend Developer</div>
+        <h2 className="name">Irfan Syahputra</h2>
+        <p className="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae minima veniam libero at! Fugit ipsum quos inventore excepturi aspernatur.</p>
+        <button className="btn">Contact Me</button>
       </div>
     </div>
   );
