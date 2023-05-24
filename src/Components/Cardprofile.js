@@ -2,8 +2,16 @@ import React from "react";
 
 const Cardprofile = ()=> {
     return (
-        <div>
-            <div>
+        // 1 inline css
+        <div style={{
+            background: 'aqua', 
+            width: '100%', 
+            height: '100vh',
+            display : "flex",
+            justifyContent : 'center',
+            alignItems : 'center',
+            }}>
+            <div className="card">
                 <img />
                 <div>Frontend Developer</div>
                 <h2>Irfan Syahputra</h2>
