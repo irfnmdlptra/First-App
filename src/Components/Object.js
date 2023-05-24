@@ -22,7 +22,16 @@ const Motor = {
     matikan : ()=> {
         setMotor(data => {
             return {
-                ...
+                ...data,
+                status : 'Off',
+            }
+        })
+    },
+    isibensin : ()=> {
+        setMotor(data => {
+            return {
+                ...data,
+                bensin : data.bensin + 20
             }
         })
     }
