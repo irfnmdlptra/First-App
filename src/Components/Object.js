@@ -18,5 +18,12 @@ const Motor = {
                 bensin : data.bensin - 5
             }
         })
+    },
+    matikan : ()=> {
+        setMotor(data => {
+            return {
+                ...
+            }
+        })
     }
 }
