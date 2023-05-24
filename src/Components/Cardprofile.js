@@ -2,8 +2,9 @@ import React from "react";
 
 const Cardprofile = ()=> {
     return (
-        <>
-        </>
+        <div>
+            <div></div>
+        </div>
     )
 }
 
