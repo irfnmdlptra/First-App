@@ -19,14 +19,15 @@ class App extends React.Component{
     const fruit = fruits.map( (f, index)=> <li key={index} >{f}</li>)
 
     // 2. Array.filter yaitu menghasilakn array baru tapi item yang didapat sesuai dengan kondisi tertentu sdesuai namanya filter
-    const numbers = [2, 4, 1, 6, 8, 10, 7, 9, 5];
-    const number = numbers.filter( (n)=> n < 6);
-    console.log(number)
+    const numbers = [0, ,-10, 2, 4, 1, 6, 8, 10, 7, 9, 5];
+    const number = numbers.filter( (n)=> n <= 6);
+    const num = number.map( (n)=> <li key={n.toString()}>{n}</li>)
     return (<>
       <div>
         <h1>hello world</h1>
         <ul>
-         { fruit }
+         { fruit },
+         { num }
         </ul>
       </div>
     </>
