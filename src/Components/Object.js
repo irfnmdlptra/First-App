@@ -40,3 +40,5 @@ const Motor = {
 }
 
 }
+
+export default Object
