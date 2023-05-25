@@ -15,7 +15,7 @@ const Object = ()=> {
             // 2. Metod 
             nyalakan : ()=> {
                 console.log('nyalakan mesin');
-                motor.status = 'ON';
+                setMtr( {status : 'ON'} )
                 console.log(motor.status)
             }
         }
@@ -35,8 +35,9 @@ const motor = {
     // 2. Metod 
     nyalakan : ()=> {
         console.log('nyalakan mesin');
-        setMtr( {status: 'ON'} )
-        console.log(motor.status)
+        
+        motor.status = 'ON';
+        console.log(mtr)
     }
 }
 return (
