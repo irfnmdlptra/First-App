@@ -15,29 +15,7 @@ const motor = {
 
     // 2. Metod 
     nyalakan : ()=> {
-        setMotor( data => {
-            return {
-                ...data,
-                status : 'ON',
-                bensin : data.bensin - 5
-            }
-        })
-    },
-    matikan : ()=> {
-        setMotor(data => {
-            return {
-                ...data,
-                status : 'Off',
-            }
-        })
-    },
-    isibensin : ()=> {
-        setMotor(data => {
-            return {
-                ...data,
-                bensin : data.bensin + 20
-            }
-        })
+        console.log('nyalakan mesin')
     }
 }
 return (
