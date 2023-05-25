@@ -42,6 +42,10 @@ const motor = {
 }
 return (
     <>
+    <ul>
+        <li>Motor : Honda</li>
+        <li>Jenis : ADV 160</li>
+    </ul>
     </>
 )
 }
