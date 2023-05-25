@@ -3,7 +3,7 @@ const Object = ()=> {
 
 
 
-const Motor = {
+const motor = {
     merek : 'Honda HDV 160',//Key -- Value
     jenis : 'Matic',
     Warna : 'Merah',//Property
@@ -38,7 +38,10 @@ const Motor = {
         })
     }
 }
-
+return (
+    <>
+    </>
+)
 }
 
 export default Object
