@@ -17,10 +17,20 @@ const Object = () => {
         return {
           ...data,
           status: "ON",
+          bensin: data.bensin -5,
         };
-      });
+      })
       console.log(motor.status);
     },
+    matikan: () => {
+        setMtr((data => {
+            return {
+                ...data,
+                status : 'OFF',
+            }
+
+        }))
+    }
   });
 
   const motor = {
@@ -40,6 +50,10 @@ const Object = () => {
       motor.status = "ON";
       console.log(mtr);
     },
+    matikan: () => {
+        console.log('matikan mesin')
+        setMtr
+    }
   };
   return (
     <>
@@ -48,7 +62,7 @@ const Object = () => {
         <li>Merek : {mtr.merek}</li>
         <li>Jenis : {mtr.jenis} </li>
         <li>warna : {mtr.warna} </li>
-        <li>bensin : {mtr.bensin} </li>
+        <li>bensin : {mtr.bensin} L </li>
         <li>harga : {mtr.harga} </li>
         <li>plat : {mtr.plat} </li>
         <li>status : {mtr.status} </li>
@@ -56,6 +70,7 @@ const Object = () => {
       <button style={{ padding: "10px 20px", background: "aqua", color: "blue", borderRadius: "10px", fontFamily: "arial" }} onClick={() => mtr.nyalakan()}>
         Nyalakan
       </button>
+     
     </>
   );
 };
