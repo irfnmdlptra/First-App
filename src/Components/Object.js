@@ -13,14 +13,12 @@ const Object = () => {
     // 2. Metod
     nyalakan: () => {
       console.log("nyalakan mesin");
-      setMtr( data => {
+      setMtr((data) => {
         return {
-
-            ...data,
-            status: 'ON',
-        }
-
-      } );
+          ...data,
+          status: "ON",
+        };
+      });
       console.log(motor.status);
     },
   });
