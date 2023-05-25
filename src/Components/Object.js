@@ -1,6 +1,25 @@
+import { useState } from "react";
 
 const Object = ()=> {
 
+    let [mtr, setMtr] = useState(
+        {
+            merek : 'YAMAH',//Key -- Value
+            jenis : ' JUPITER MX 135',
+            warna : 'Merah',//Property
+            bensin : 10,
+            harga : 25000000,
+            plat : "DD 1945 UD",
+            status : 'OFF',
+        
+            // 2. Metod 
+            nyalakan : ()=> {
+                console.log('nyalakan mesin');
+                motor.status = 'ON';
+                console.log(motor.status)
+            }
+        }
+    )
 
 
 const motor = {
