@@ -4,14 +4,16 @@ const Object = ()=> {
 
 
 const motor = {
-    merek : 'Honda HDV 160',//Key -- Value
-    jenis : 'Matic',
+    // 1. Property
+    merek : 'Honda',//Key -- Value
+    jenis : ' HDV 160',
     Warna : 'Merah',//Property
     bensin : 10,
     harga : 30000000,
     plat : "DD 1945 UD",
     status : 'OFF',
 
+    // 2. Object 
     nyalakan : ()=> {
         setMotor( data => {
             return {
