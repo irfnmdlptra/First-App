@@ -5,9 +5,9 @@ const Object = ()=> {
 
 const motor = {
     // 1. Property
-    merek : 'Honda',//Key -- Value
+    merek : 'yamaha',//Key -- Value
     jenis : ' HDV 160',
-    Warna : 'Merah',//Property
+    warna : 'Merah',//Property
     bensin : 10,
     harga : 30000000,
     plat : "DD 1945 UD",
@@ -24,6 +24,11 @@ return (
     <ul>
         <li>Merek : {motor.merek}</li>
         <li>Jenis : {motor.jenis} </li>
+        <li>Jenis : {motor.warna} </li>
+        <li>Jenis : {motor.bensin} </li>
+        <li>Jenis : {motor.harga} </li>
+        <li>Jenis : {motor.plat} </li>
+        <li>Jenis : {motor.status} </li>
     </ul>
     </>
 )
