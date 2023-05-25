@@ -24,9 +24,9 @@ return (
     <ul>
         <li>Merek : {motor.merek}</li>
         <li>Jenis : {motor.jenis} </li>
-        <li>Jenis : {motor.warna} </li>
-        <li>Jenis : {motor.bensin} </li>
-        <li>Jenis : {motor.harga} </li>
+        <li>warna : {motor.warna} </li>
+        <li>bensin : {motor.bensin} </li>
+        <li>harga : {motor.harga} </li>
         <li>Jenis : {motor.plat} </li>
         <li>Jenis : {motor.status} </li>
     </ul>
