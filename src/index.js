@@ -8,7 +8,7 @@ import Object from './components/Object';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>b
+  <React.StrictMode>
     <Object/>
   </React.StrictMode>
 );
