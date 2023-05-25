@@ -1,4 +1,6 @@
 
+const Object = ()=> {
+
 
 
 const Motor = {
@@ -35,4 +37,6 @@ const Motor = {
             }
         })
     }
+}
+
 }
