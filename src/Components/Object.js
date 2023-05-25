@@ -13,7 +13,7 @@ const motor = {
     plat : "DD 1945 UD",
     status : 'OFF',
 
-    // 2. Object 
+    // 2. Metod 
     nyalakan : ()=> {
         setMotor( data => {
             return {
