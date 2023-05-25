@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Object = () => {
   let [mtr, setMtr] = useState({
-    merek: "YAMAH", //Key -- Value
+    merek: "YAMAHA", //Key -- Value
     jenis: " JUPITER MX 135",
     warna: "Merah", //Property
     bensin: 10,
@@ -13,7 +13,14 @@ const Object = () => {
     // 2. Metod
     nyalakan: () => {
       console.log("nyalakan mesin");
-      setMtr({ status: "ON" });
+      setMtr( data => {
+        return {
+
+            ...data,
+            status: 'ON',
+        }
+
+      } );
       console.log(motor.status);
     },
   });
