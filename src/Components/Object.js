@@ -17,44 +17,50 @@ const Object = () => {
         return {
           ...data,
           status: "ON",
-          bensin: data.bensin -5,
+          bensin: data.bensin - 5,
         };
-      })
-      console.log(motor.status);
+      });
     },
     matikan: () => {
-        setMtr((data => {
-            return {
-                ...data,
-                status : 'OFF',
-            }
-
-        }))
-    }
+      setMtr((data) => {
+        return {
+          ...data,
+          status: "OFF",
+        };
+      });
+    },
+    isibensin: () => {
+      setMtr((data) => {
+        return {
+          ...data,
+          bensin: data.bensin + 5,
+        };
+      });
+    },
   });
 
-  const motor = {
-    // 1. Property
-    merek: "YAMAH", //Key -- Value
-    jenis: " JUPITER MX 135",
-    warna: "Merah", //Property
-    bensin: 10,
-    harga: 25000000,
-    plat: "DD 1945 UD",
-    status: "OFF",
+//   const motor = {
+//     // 1. Property
+//     merek: "YAMAH", //Key -- Value
+//     jenis: " JUPITER MX 135",
+//     warna: "Merah", //Property
+//     bensin: 10,
+//     harga: 25000000,
+//     plat: "DD 1945 UD",
+//     status: "OFF",
 
-    // 2. Metod
-    nyalakan: () => {
-      console.log("nyalakan mesin");
+//     // 2. Metod
+//     nyalakan: () => {
+//       console.log("nyalakan mesin");
 
-      motor.status = "ON";
-      console.log(mtr);
-    },
-    matikan: () => {
-        console.log('matikan mesin')
-        setMtr
-    }
-  };
+//       motor.status = "ON";
+//       console.log(mtr);
+//     },
+//     matikan: () => {
+//       console.log("matikan mesin");
+//       setMtr;
+//     },
+//   }
   return (
     <>
       <h1>Motor</h1>
@@ -67,10 +73,15 @@ const Object = () => {
         <li>plat : {mtr.plat} </li>
         <li>status : {mtr.status} </li>
       </ul>
-      <button style={{ padding: "10px 20px", background: "aqua", color: "blue", borderRadius: "10px", fontFamily: "arial" }} onClick={() => mtr.nyalakan()}>
+      <button style={{ padding: "10px 20px", background: "red", color: "white", borderRadius: "10px", fontFamily: "arial" }} onClick={() => mtr.nyalakan()}>
         Nyalakan
       </button>
-     
+      <button style={{ padding: "10px 20px", background: "yellow", color: "white", borderRadius: "10px", fontFamily: "arial" }} onClick={() => mtr.matikan()}>
+        Matikan
+      </button>
+      <button style={{ padding: "10px 20px", background: "green", color: "white", borderRadius: "10px", fontFamily: "arial" }} onClick={() => mtr.isibensin()}>
+        Isi Bensin
+      </button>
     </>
   );
 };
