@@ -15,7 +15,9 @@ const motor = {
 
     // 2. Metod 
     nyalakan : ()=> {
-        console.log('nyalakan mesin')
+        console.log('nyalakan mesin');
+        motor.status = 'ON';
+        console.log(motor.status)
     }
 }
 return (
