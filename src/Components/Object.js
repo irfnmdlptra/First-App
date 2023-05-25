@@ -35,7 +35,7 @@ const motor = {
     // 2. Metod 
     nyalakan : ()=> {
         console.log('nyalakan mesin');
-        motor.status = 'ON';
+        setMtr( {status: 'ON'} )
         console.log(motor.status)
     }
 }
@@ -43,15 +43,15 @@ return (
     <>
     <h1>Motor</h1>
     <ul>
-        <li>Merek : {motor.merek}</li>
-        <li>Jenis : {motor.jenis} </li>
-        <li>warna : {motor.warna} </li>
-        <li>bensin : {motor.bensin} </li>
-        <li>harga : {motor.harga} </li>
-        <li>plat : {motor.plat} </li>
-        <li>status : {motor.status} </li>
+        <li>Merek : {mtr.merek}</li>
+        <li>Jenis : {mtr.jenis} </li>
+        <li>warna : {mtr.warna} </li>
+        <li>bensin : {mtr.bensin} </li>
+        <li>harga : {mtr.harga} </li>
+        <li>plat : {mtr.plat} </li>
+        <li>status : {mtr.status} </li>
     </ul>
-    <button style={{padding:'10px 20px', background:'aqua',color:'blue',borderRadius:'10px',fontFamily:'arial'}} onClick={()=> motor.nyalakan()}>Nyalakan</button>
+    <button style={{padding:'10px 20px', background:'aqua',color:'blue',borderRadius:'10px',fontFamily:'arial'}} onClick={()=> mtr.nyalakan()}>Nyalakan</button>
     </>
 )
 }
