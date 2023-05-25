@@ -22,8 +22,8 @@ return (
     <>
     <h1>Motor</h1>
     <ul>
-        <li>Merek : HONDA</li>
-        <li>Jenis : ADV 160</li>
+        <li>Merek : {motor.merek}</li>
+        <li>Jenis : {motor.jenis} </li>
     </ul>
     </>
 )
