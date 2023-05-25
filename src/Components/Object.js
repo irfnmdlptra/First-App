@@ -30,6 +30,7 @@ return (
         <li>plat : {motor.plat} </li>
         <li>status : {motor.status} </li>
     </ul>
+    <button style={{padding:'10px 20px', background:'aqua',color:'blue',borderRadius:'10px',fontFamily:'arial'}} onClick={()=> motor.nyalakan()}>Nyalakan</button>
     </>
 )
 }
