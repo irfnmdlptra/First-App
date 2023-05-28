@@ -19,8 +19,8 @@ class Event extends React.Component {
         e.target.innerHTML = 'click me'
     }
 
-    sapa() {
-
+    sapa(e) {
+        this.setState({nama : e.target.value})
     }
     render() {
         return(
@@ -31,7 +31,7 @@ class Event extends React.Component {
 
 
             <h1>halo : {this.state.nama}</h1>
-            <input className="form-control-lg bg-body-tertiary" type="text" />
+            <input onChange={(e)=> this.sapa(e)} className="form-control-lg bg-body-tertiary" type="text" />
             </>
 
         )
