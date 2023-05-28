@@ -5,7 +5,7 @@ class Event extends React.Component {
     constructor() {
         super();
         this.state =  {
-            nama 
+            nama : 'ippamz'
         }
     }
     kirimPesan(nama) {
@@ -30,8 +30,8 @@ class Event extends React.Component {
             <button className="btn btn-outline-primary"  onClick={ this.kirimPesan.bind(this, 'agus')}  onMouseOut={(e)=> this.ubahLagi(e)} onMouseEnter={(e)=> this.ubahTulisan(e)}>click me</button>
 
 
-            <h1>hello : </h1>
-            <input type="text" onChange={}/>
+            <h1>halo : {this.state.nama}</h1>
+            <input className="form-control-lg bg-body-tertiary" type="text" />
             </>
 
         )
