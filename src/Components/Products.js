@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 const Products = () => {
   const url = "https://fakestoreapi.com/products";
@@ -11,17 +10,20 @@ const Products = () => {
     const response = await fetch(url);
     const dataProducts = await response.json();
     setProducts(dataProducts);
-    console.log(products);
   };
 
   useEffect(() => {
     getDataProducts();
   });
   return (
-    <>
-      <h1>My Products</h1>
-      <CardProduct/>
-    </>
+    <div className="container">
+      <div className="row">
+        <div className="col-3">
+          <h1>My Products</h1>
+          { products.map((produk)=> <CardProduct/> )}
+        </div>
+      </div>
+    </div>
   );
 };
 function CardProduct() {
