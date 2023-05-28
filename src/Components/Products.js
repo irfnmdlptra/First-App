@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Products = ()=> {
     const url = 'https://fakestoreapi.com/products';
@@ -10,6 +10,10 @@ const Products = ()=> {
         setProducts(dataProducts);
         console.log(products)
     } 
+
+    useEffect( ()=> {
+        getDataProducts();
+    })
     return (
         <>
         <h1>Products</h1>
