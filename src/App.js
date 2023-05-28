@@ -1,8 +1,9 @@
-import Object from './components/Object';
+// import Object from './components/Object';
+import Event from './components/Event';
 const App = ()=> {
   return (
     <>
-    <Object/>
+    <Event/>
     </>
   )
 }
