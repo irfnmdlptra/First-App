@@ -3,6 +3,13 @@ import { useState } from "react";
 const Products = ()=> {
     const url = 'https://fakestoreapi.com/products';
     const [products,setProducts] = useState([]);
+
+    const getDataProducts = async ()=> {
+       const response = await fetch(url);
+        const dataProducts = await response.json();
+        setProducts(dataProducts);
+        console.log(products)
+    } 
     return (
         <>
         <h1>Products</h1>
