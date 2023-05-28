@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Animasi from './components/Animasi';
+import App from './App';
+// import Animasi from './components/Animasi';
 // import Object from './components/Object';
 // import Cardprofile from './components/Cardprofile';
 // import App from './App';
@@ -10,7 +11,7 @@ import Animasi from './components/Animasi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Animasi/>
+    <App/>
   </React.StrictMode>
 );
 
