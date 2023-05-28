@@ -19,12 +19,23 @@ const Products = () => {
     <div className="container">
       <div className="row">
         <h1>My Products</h1>
-        { products.map((produk) => <div className="col-3"><CardProduct key={produk.id} title={produl.title} price={produk.price} /> </div>)}
+        {products.map((produk) => {
+          return (
+            <div className="col-3">
+              <CardProduct 
+              key={produk.id} 
+              title={produl.title} 
+              price={produk.price}
+              description={produk.description} 
+              image={produk.image} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 };
-function CardProduct() {
+function CardProduct(props) {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="holder.js/100px180" />
