@@ -20,10 +20,11 @@ const Products = () => {
   return (
     <>
       <h1>My Products</h1>
+      <CardProduct/>
     </>
   );
 };
-function BasicExample() {
+function CardProduct() {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="holder.js/100px180" />
