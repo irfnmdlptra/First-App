@@ -1,11 +1,9 @@
-// import Object from './components/Object';
-import Event from './components/Event';
-const App = ()=> {
-  return (
-    <>
-    <Event/>
-    </>
-  )
+import React from "react"
+
+class App extends React.Component {
+  render() {
+    return 
+  }
 }
 
 export default App
