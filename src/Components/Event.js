@@ -27,7 +27,7 @@ class Event extends React.Component {
             <>
 
             <button className="btn btn-outline-primary" onClick={(e)=> this.kirimPesan('gasss', e)}>click me</button>
-            <button className="btn btn-outline-primary"  onClick={ this.kirimPesan.bind(this, 'agus')}  onMouseOut={(e)=> this.ubahLagi(e)} onMouseEnter={(e)=> this.ubahTulisan(e)}>click me</button>
+            <button className="btn btn-outline-primary"  onClick={ this.sapa.bind(this)}  onMouseOut={(e)=> this.ubahLagi(e)} onMouseEnter={(e)=> this.ubahTulisan(e)}>click me</button>
 
 
             <h1>halo : {this.state.nama}</h1>
