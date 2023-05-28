@@ -24,7 +24,7 @@ const Products = () => {
             <div className="col-3">
               <CardProduct 
               key={produk.id} 
-              title={produl.title} 
+              title={produk.title} 
               price={produk.price}
               description={produk.description} 
               image={produk.image} />
@@ -38,10 +38,11 @@ const Products = () => {
 function CardProduct(props) {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+        <Card.Title>{props.title} </Card.Title>
+        <Card.Text>{props.description} </Card.Text>
+        <h3>{props.price}</h3>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
