@@ -2,6 +2,12 @@ import React from "react";
 
 
 class Event extends React.Component {
+    constructor() {
+        super();
+        this.state =  {
+            nama 
+        }
+    }
     kirimPesan(nama) {
         alert('hallo nama aku ' + nama)
     }
