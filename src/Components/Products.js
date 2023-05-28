@@ -38,11 +38,11 @@ const Products = () => {
 function CardProduct(props) {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={props.image} />
+      <Card.Img style={{height: '285px', overflow: 'hidden'}} variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.title} </Card.Title>
         <Card.Text>{props.description} </Card.Text>
-        <h3>{props.price}</h3>
+        <h3>Price : {props.price}$</h3>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
