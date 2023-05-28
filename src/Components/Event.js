@@ -1,4 +1,6 @@
 import React from "react";
+
+
 class Event extends React.Component {
     kirimPesan(nama) {
         alert('hallo nama aku ' + nama)
@@ -10,15 +12,22 @@ class Event extends React.Component {
     ubahLagi(e) {
         e.target.innerHTML = 'click me'
     }
+
+    sapa() {
+
+    }
     render() {
         return(
             <>
 
             <button className="btn btn-outline-primary" onClick={(e)=> this.kirimPesan('gasss', e)}>click me</button>
-            <button className="btn -btn-outline-secondary" onClick={ this.kirimPesan.bind(this, 'agus')}>click me</button>
-            <button className="btn btn-outline-primary" onMouseEnter={(e)=> this.ubahTulisan(e)}>click me</button>
-            <button className="btn btn-outline-primary" onMouseOut={(e)=> this.ubahLagi(e)}>click me</button>
+            <button className="btn btn-outline-primary"  onClick={ this.kirimPesan.bind(this, 'agus')}  onMouseOut={(e)=> this.ubahLagi(e)} onMouseEnter={(e)=> this.ubahTulisan(e)}>click me</button>
+
+
+            <h1>hello : </h1>
+            <input type="text" onChange={}/>
             </>
+
         )
     }
 }
